@@ -9,5 +9,5 @@ Please install the following packages in the virtual environment:
 * Numpy
 
 The website used for training the chatbot is :
-[https://www.theenglishspace.com/useful-english/restaurant/conversation.html]
+https://7esl.com/restaurant-english/, https://www.fluentu.com/blog/english/restaurant-english-conversation/, https://www.english-at-home.com/conversations-restaurant/
 
