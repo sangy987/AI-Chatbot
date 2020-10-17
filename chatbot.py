@@ -23,7 +23,7 @@ import numpy as np
 nltk.download('punkt')
 lista = ['https://www.english-at-home.com/conversations-restaurant/','https://7esl.com/restaurant-english/','https://www.fluentu.com/blog/english/restaurant-english-conversation/']
 for list in lista:
-    first_article = Article(url="%s" % list, language='de')
+    first_article = Article(url="%s" % list, language='en')
     first_article.download()
     first_article.parse()
     first_article.nlp
