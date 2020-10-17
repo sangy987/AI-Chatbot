@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1K1yGlUyBeTjM21g9GBiISmHiTHxWpz52
 """
 
-pip install nltk
+#pip install nltk
 
-pip install newspaper3k
+#pip install newspaper3k
 
 from newspaper import Article
 import random
@@ -17,11 +17,11 @@ import nltk
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-import warnings
-warnings.filterwarnings('ignore')
+#import warnings
+#warnings.filterwarnings('ignore')
 
 nltk.download('punkt')
-lista = ['https://www.englishclub.com/vocabulary/food-restaurants.php','https://www.theenglishspace.com/useful-english/restaurant/conversation.html','https://www.esolcourses.com/content/topics/food/eating-out/at-the-restaurant.html']
+lista = ['https://www.english-at-home.com/conversations-restaurant/','https://7esl.com/restaurant-english/','https://www.fluentu.com/blog/english/restaurant-english-conversation/']
 for list in lista:
     first_article = Article(url="%s" % list, language='de')
     first_article.download()
@@ -86,4 +86,4 @@ while (True):
     if greeting_response(user_input)!= None:
       print('Restaurant Bot:' + greeting_response(user_input))
     else:
-      print('Restaurant bot'+bot_response(user_input))
+      print('Restaurant bot'+ bot_response(user_input))
