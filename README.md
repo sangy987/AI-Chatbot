@@ -1,8 +1,8 @@
 # AI-Chatbot
-a simple chatbot with NLP implementation
+A simple chatbot with NLP implementation
 
 Please install the following packages in the virtual environment:
-* Newspaper - for scraping data from the website
+* Newspaper3k - for scraping data from the website
 * Tensorflow
 * Sklearn
 * Nltk
