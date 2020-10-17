@@ -21,17 +21,18 @@ import warnings
 warnings.filterwarnings('ignore')
 
 nltk.download('punkt')
-
-article = Article('https://www.theenglishspace.com/useful-english/restaurant/conversation.html')
-article.download()
-article.parse()
-article.nlp
-corpus= article.text
-print(corpus)
+lista = ['https://www.englishclub.com/vocabulary/food-restaurants.php','https://www.theenglishspace.com/useful-english/restaurant/conversation.html','https://www.esolcourses.com/content/topics/food/eating-out/at-the-restaurant.html']
+for list in lista:
+    first_article = Article(url="%s" % list, language='de')
+    first_article.download()
+    first_article.parse()
+    first_article.nlp
+    corpus= article.text
+    #print(corpus)
 
 text = corpus
 sentence_list = nltk.sent_tokenize(text)
-print(sentence_list)
+#print(sentence_list)
 
 
 
